@@ -1,6 +1,6 @@
 .position {
   float: left;
-  margin: 50px 50px;
+  margin: 100px 50px;
 }
 
 .progress-bar {
@@ -33,26 +33,19 @@
 .progress-bar .rotate {
   clip: rect(0 50px 100px 0);
   background-color: #4b86db;
-  transition: all 1.5s linear;
 }
 .progress-bar .left {
   clip: rect(0 50px 100px 0);
-  opacity: 0;
-  animation: toggle 1s step-start;
+  opacity: 1;
   background-color: #b3cef6;
 }
 .progress-bar .right {
   clip: rect(0 50px 100px 0);
   transform: rotate(180deg);
-  animation: toggle 1s step-end;
+  opacity: 0;
   background-color: #4b86db;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(-270 deg);
-  }
-}
 @keyframes toggle {
   0% {
     opacity: 0;

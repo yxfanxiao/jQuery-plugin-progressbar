@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Progress Bar</title>
+	<link rel="stylesheet" href="jQuery-plugin-progressbar.css">
+	<script src="jquery-1.11.3.js"></script>
+	<script src="jQuery-plugin-progressbar.js"></script>
+</head>
+<body>
+	<div class="progress-bar position"></div>
+	<div class="progress-bar position" data-percent="60" data-duration="1000" data-color="#ccc,yellow"></div>
+	<div class="progress-bar position" data-percent="20" data-color="#a456b1,#12b321"></div>
+	<input type="submit" value="加载">
+	<script>
+		$(".progress-bar").loading();
+		$('input').on('click', function () {
+			 $(".progress-bar").loading();
+		});
+	</script>
+</body>
+</html>
