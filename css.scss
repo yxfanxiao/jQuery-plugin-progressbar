@@ -1,0 +1,65 @@
+$circle-size: 100px;
+$background-color: #b3cef6; 
+$progress-color: #4b86db;
+$percent: 75;
+$duration: 2s;
+.position {
+	float: left;
+	margin: 50px 50px;
+}
+.progress-bar {
+	position: relative;
+	height: $circle-size;
+	width: $circle-size;
+	div {
+		position: absolute;
+		height: $circle-size;
+		width: $circle-size;
+		border-radius: 50%;
+			span {
+				position: absolute;
+				font-family: Arial;
+				font-size: $circle-size / 4;
+				line-height: $circle-size / 4 * 3;
+				height: $circle-size / 4 * 3;
+				width: $circle-size / 4 * 3;
+				left: $circle-size / 8;
+				top: $circle-size / 8;
+				text-align: center;
+				border-radius: 50%;
+				background-color: white;
+			}
+	}
+
+	.background {
+		background-color: $background-color;
+	}
+	.rotate {
+		clip: rect(0 ($circle-size / 2) $circle-size 0);
+		background-color: $progress-color;
+		// animation: rotate $duration linear;
+		// transform: rotate(-100deg);
+		transition: all (2s * $percent / 100) linear;
+	}
+	.left {
+		clip: rect(0 ($circle-size / 2) $circle-size 0);
+		opacity: 0;
+		animation: toggle ($duration / 2)  step-start;
+		background-color: $background-color;
+	}
+	.right {
+		clip: rect(0 ($circle-size / 2) $circle-size 0);
+		transform: rotate(180deg);
+		animation: toggle ($duration / 2) step-end;
+		background-color: $progress-color;
+	}
+}
+
+@keyframes rotate {
+	0%		{ transform: rotate(( -1 * $percent * 3.6) deg); }
+}
+
+@keyframes toggle {
+	0%		{ opacity: 0; }
+	100%	{ opacity: 1; }
+}
