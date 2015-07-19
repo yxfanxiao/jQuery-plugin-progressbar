@@ -6,7 +6,7 @@ a simple jQuery plugin ---  dynamic loading progress bar
 ![](https://github.com/yxfanxiao/jQuery-plugin-progressbar/raw/master/screenshot.png)
 
 ## how to use
-firstky, you need to download jQuery-plugin-progressbar.js & jQuery-plugin-progressbar.css 
+firstly, you need to download jQuery-plugin-progressbar.js & jQuery-plugin-progressbar.css 
 
 ####demo
 ``` javascript
@@ -25,15 +25,15 @@ firstky, you need to download jQuery-plugin-progressbar.js & jQuery-plugin-progr
 ```
 
 * when use you can change 4 parameters:
-	** data-percent (百分比数)
-	** data-duration (转圈的时长)
-	** data-color (进度条背景颜色，进度条颜色)
+	* data-percent (百分比数)
+	* data-duration (转圈的时长)
+	* data-color (进度条背景颜色，进度条颜色)
 * you can change default parameters in css.scss
-	** $circle-size: 100px (圆的直径)
-	** $background-color: #b3cef6 (进度条背景颜色)
-	** $progress-color: #4b86db (进度条颜色)
-	** $percent: 75 (百分比数)
-	** $duration: 2s (转圈的时长)
+	* $circle-size: 100px (圆的直径)
+	* $background-color: #b3cef6 (进度条背景颜色)
+	* $progress-color: #4b86db (进度条颜色)
+	* $percent: 75 (百分比数)
+	* $duration: 2s (转圈的时长)
 
 
 ## a problem
