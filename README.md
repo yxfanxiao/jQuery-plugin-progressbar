@@ -12,8 +12,8 @@ firstly, you need to download jQuery-plugin-progressbar.js & jQuery-plugin-progr
 ``` javascript
 
 <div class="progress-bar"></div>
-<div class="progress-bar" data-percent="60" data-duration=1000" data-color="#ccc,yellow"></div>
-<div class="progress-bar" data-percent="20" data-color=#a456b1,#12b321"></div>
+<div class="progress-bar" data-percent="60" data-duration="1000" data-color="#ccc,yellow"></div>
+<div class="progress-bar" data-percent="20" data-color="#a456b1,#12b321"></div>
 <input type="submit" value="加载">
 <script>
 	$(".progress-bar").loading();				// you can load automatically
